@@ -1,0 +1,120 @@
+.dndflow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dndflow aside {
+  border-right: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fcfcfc;
+}
+
+.dndflow .MuiButton-root {
+  width: 100%;
+}
+
+.sidebar {
+flex-direction: column;
+align-items: center;
+border-right: 1px solid #eee;
+padding: 15px 10px;
+font-size: 12px;
+background: #fcfcfc;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow .MuiBox-root {
+    width: 20%;
+    max-width: 250px;
+  }
+}
+
+.dndflow aside .description {
+  margin-bottom: 10px;
+}
+
+.dndflow .dndnode {
+  height: 50px;
+  padding: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  cursor: grab;
+}
+
+.dndflow .node-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.dndflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dndflow .selectall {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 468px) {
+  .dndflow {
+    flex-direction: row;
+  }
+
+  .dndflow aside {
+    width: 10%;
+    max-width: 150px;
+  }
+}
+
+.dndflow .dndnode:hover,
+.dndflow .MuiButton-root:hover {
+  background-color: #d8d8d8; /* Add a background color on hover */
+}
+
+.button-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.button-container .MuiButton-root,
+.button-menu .MuiButton-root {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 1px;
+  min-width: 180px;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.button-menu {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  z-index: 1;
+  /* Adjust or add specific styles for .button-menu if needed */
+}
+
+.dndflow .MuiBox-root {
+  width: auto;
+  max-width: 250px; /* You can still set a maximum width if needed */
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Adjust the spacing between buttons */
+}
+
+.button-container button {
+  border-radius: 6px;
+  margin-top: 1px;
+  min-width: 180px;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  /* Add any additional styling for the button if needed */
+}
